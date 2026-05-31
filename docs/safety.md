@@ -5,7 +5,7 @@ This project uses 230 VAC mains voltage and a microwave oven transformer. Both c
 ## Main risks
 
 - Electric shock from mains wiring.
-- Fire from short circuits, wrong fuse selection, or overheated conductors.
+- Fire from short circuits or overheated conductors.
 - Burns from hot electrodes, welded metal, and the transformer.
 - Eye injury from sparks.
 - Damage to batteries if welding nickel strips to cells incorrectly.
@@ -13,7 +13,6 @@ This project uses 230 VAC mains voltage and a microwave oven transformer. Both c
 
 ## Minimum safety requirements
 
-- Use a fuse on the live conductor.
 - Use a closed enclosure.
 - Add strain relief for mains and electrode cables.
 - Keep the logic PCB separated from the MOT and power wiring.
