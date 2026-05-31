@@ -51,7 +51,7 @@ The 230 VAC sensing path goes through two high-value 100 kΩ resistors into an H
 
 The triac drive uses a MOC3023M optotriac. The logic side is driven from the ATmega through a resistor. The high-voltage output side provides the isolated gate-drive signal for the external BTA41 triac module.
 
-The BTA41, its heatsink, gate resistor, MOV, snubber, fuse, and MOT wiring are external to the logic PCB.
+The BTA41, its heatsink, gate resistor, MOV, snubber, and MOT wiring are external to the logic PCB.
 
 ## Planned hardware
 
@@ -86,7 +86,6 @@ The BTA41, its heatsink, gate resistor, MOV, snubber, fuse, and MOT wiring are e
 | MOV | SIOV-S14K275 / B72214S0271K101 |
 | Snubber capacitor | JFW-10N/310-P15, 10 nF, X2, 310 VAC |
 | Snubber resistor | MOF2WS-47R, 47 Ω, 2 W, metal oxide |
-| Fuse | T16A 250 VAC slow-blow, final value to be verified by testing |
 
 ## Pin assignment
 
@@ -109,7 +108,7 @@ Button pins are routed to the panel terminal and are intended to use internal pu
 ## Power module wiring summary
 
 ```text
-L -> fuse -> MT2 BTA41
+L -> MT2 BTA41
 MT1 BTA41 -> MOT primary -> N
 
 MOC3023 pin 4 / TRIAC_GATE -> 360R -> GATE BTA41
@@ -121,9 +120,9 @@ Snubber: MT1 -> 47R -> 10nF X2 -> MT2
 
 ## Safety warning
 
-This project uses 230 VAC mains voltage and a microwave oven transformer. These can be lethal and can cause fire, burns, electric shock, or equipment damage. The repository is for documentation and development only. Build and testing require proper insulation, fusing, enclosure, grounding, strain relief, and safe test procedures.
+This project uses 230 VAC mains voltage and a microwave oven transformer. These can be lethal and can cause fire, burns, electric shock, or equipment damage. The repository is for documentation and development only. Build and testing require proper insulation, enclosure, grounding, strain relief, and safe test procedures.
 
-Do not touch the circuit while powered. Do not test the HV side without an enclosure, fuse, and isolation-aware measurement setup.
+Do not touch the circuit while powered. Do not test the HV side without an enclosure and isolation-aware measurement setup.
 
 ## Bring-up plan
 
@@ -133,7 +132,7 @@ Do not touch the circuit while powered. Do not test the HV side without an enclo
 4. Program fuse bits only after the crystal is soldered and verified.
 5. Test ZERO_CROSS using a safe setup before connecting the MOT.
 6. Test triac output with a resistive load or lamp before using the MOT.
-7. Test MOT pulses with MOV, snubber, fuse, heatsink, and enclosure installed.
+7. Test MOT pulses with MOV, snubber, heatsink, and enclosure installed.
 
 ## Licensing
 
