@@ -45,7 +45,7 @@ GND -> foot switch COM
 ## Power module wiring
 
 ```text
-L -> fuse -> MT2 BTA41
+L -> MT2 BTA41
 MT1 BTA41 -> MOT primary -> N
 
 TRIAC_GATE from logic PCB -> 360R -> GATE BTA41
