@@ -1,3 +1,6 @@
+# THIS PROJECT IS STILL BEING MADE THE FILES WILL BE UPLOADED WHEN I CONNECT EVERYTHING TOGETHER, DREW SCHEMATICS FOR MOT WIRING ETC
+
+
 # MOT Spot Welder Controller
 
 Controller project for a MOT-based spot welder. The design uses an ATmega328P controller, zero-cross detection, optically isolated triac triggering, OLED UI, panel buttons, a foot switch, and an external BTA41 power triac module.
